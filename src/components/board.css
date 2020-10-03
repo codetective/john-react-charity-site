@@ -1,0 +1,21 @@
+ .card-img-top {
+    height: 300px;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .card {
+    width: 18rem;
+  }
+
+  @media screen and (max-width: 575px) {
+    .card {
+      width: 19rem;
+    }
+  }
+
+  @media screen and (max-width: 765px) {
+    .card {
+      width: 16rem;
+    }
+  }
