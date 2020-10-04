@@ -5,11 +5,16 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ContextProvider from "./Provider";
 AOS.init();
+
 ReactDOM.render(
+  <ContextProvider>
+
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>
+  </ContextProvider>,
   document.getElementById('root')
 );
 

@@ -68,9 +68,14 @@ function About() {
               Mr. Edet Vincent Udofia{" "}
             </mark>{" "}
             was named the Secretary and
-            <mark>Magistrate Emilia Umoh and Mr. John Peter Umoren </mark> were
-            nominated and ratified as members, with of course the life patron{" "}
-            <mark>Engr. Anthony Michael Udoekong </mark>.
+            <mark>Magistrate Emilia Umoh </mark>,{" "}
+            <mark> Comr. John Peter Umoren </mark>{" "}
+            <mark>
+              {" "}
+              Rtd. Sgt. Akpan Jonah Udoh and Mrs. Eno Lanky A. Simeon{" "}
+            </mark>{" "}
+            were nominated and ratified as members, with of course the life
+            patron <mark>Engr. Anthony Michael Udoekong </mark>.
             <p>
               What followed soon was outpouring of support with pledges from
               many other well-meaning indigenes.

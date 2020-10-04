@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useContext} from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./bootstrap.min.css";
 import "./App.css";
@@ -14,39 +14,58 @@ import Statements from './components/Statements'
 import ByeLaws from './components/ByeLaws'
 import Education from './components/Education'
 import Donate from './components/Donate'
+import Modal from './components/Modal'
+import newsPNG from './img/news.jpeg'
+import {context }from './Provider'
 
 function App() {
+let { modal_choice, dismiss, dontShow} = useContext(context)
+
   return (
     <div className="App">
+        {modal_choice ? (
+          <Modal>
+            <div data-aos="zoom-in-down" className="my-modal col-md-7">
+
+              <img src={newsPNG} alt="news modal" width="100%"/>
+            <button className="modal-close" onClick={dismiss}>
+                X
+            </button>
+              <div className="dont_show_again">
+
+              <button className=" btn text-white" onClick={dontShow}>Don't show again?</button>
+              </div>
+            </div>
+          </Modal>
+        ) : null}
       <Router>
-        <Header/>
+        <Header />
         <Switch>
           <Route exact path="/">
-            <Home/>
+            <Home />
           </Route>
           <Route exact path="/history">
-            <History/>
+            <History />
           </Route>
           <Route exact path="/statements">
-            <Statements/>
+            <Statements />
           </Route>
           <Route exact path="/board">
-            <Board/>
+            <Board />
           </Route>
           <Route exact path="/founderbio">
-            <FounderBio/>
+            <FounderBio />
           </Route>
           <Route exact path="/bye-laws">
-            <ByeLaws/>
+            <ByeLaws />
           </Route>
           <Route exact path="/education">
-            <Education/>
+            <Education />
           </Route>
           <Route exact path="/donate">
-            <Donate/>
+            <Donate />
           </Route>
-          <Route path="*" exact={true} component={FouroFour}/>
-
+          <Route path="*" exact={true} component={FouroFour} />
         </Switch>
 
         <Footer />
