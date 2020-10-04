@@ -62,7 +62,7 @@ function About() {
           <small className="font-weight-bold d-block">The Way Forward.</small>
           <p>
             This was well received by the house with a thunderous ovation and
-            immediately a board of Trustee was created and
+            immediately a board of Trustees was created and
             <mark>Mr. Joseph Akpan Ina</mark>
             was tasked to chair the board. <mark>
               Mr. Edet Vincent Udofia{" "}
