@@ -43,7 +43,7 @@ function Education() {
             </p>
             <p>
               Efforts from the citizens to acquire formal
-              education from the Primary to the Secondary levels has been
+              education from the Primary to the Secondary levels have been
               commendable despite the lack of Secondary School in the community.
               Normally, citizens living in Aka Ikot Udo Eno, after completion of
               Primary Education, go to nearby communities to attend Secondary

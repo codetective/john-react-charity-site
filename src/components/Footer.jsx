@@ -61,7 +61,10 @@ function Footer() {
                  contact us
                </small>
                <small className="text-white">
-                 <a href="#1" className="mr-2 my-2 d-flex">
+                 <a
+                   href="https://www.facebook.com/James-Udoekong-Education-Trust-Fund-117624183436700/"
+                   className="mr-2 my-2 d-flex"
+                 >
                    <img src={fb} alt="" className="mr-2" />
                    <h5>Facebook Link</h5>
                  </a>
@@ -74,11 +77,11 @@ function Footer() {
                </small>
                <small className="text-white">
                  <a
-                   href="mailto:anthony. my-2udoekong@yahoo.com"
+                   href="mailto:info@jamesudoekongtrustfund.org"
                    className="mr-2 d-flex"
                  >
                    <img src={mail} alt="" className="mr-2" />
-                   <h5>Anthony.udoekong@yahoo.com</h5>
+                   <h5>info@jamesudoekongtrustfund.org</h5>
                  </a>
                </small>
 
