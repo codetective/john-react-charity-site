@@ -2,10 +2,11 @@ import React from 'react'
 import p1 from '../img/p1.jpg'
 import p2 from '../img/p2.jpg'
 import coin from '../img/coin.svg'
-import love from '../img/love.svg'
+// import love from '../img/love.svg'
 import share from '../img/share.svg'
-import baby from '../img/baby.svg'
-import {Link} from 'react-router-dom'
+// import baby from '../img/baby.svg'
+import { Link } from 'react-router-dom'
+import './home.css'
 function Home() {
   return (
     <>
@@ -30,7 +31,7 @@ function Home() {
           </div>
         </section>
 
-        <section id="history-section">
+        <section id="history-section mb-5">
           <div className="container">
             <div className="row">
               <div className="col-md-6 box">
@@ -44,10 +45,9 @@ function Home() {
 
                   <h3 className="mb-1">
                     <span className="block-text">
-                      ...Shaping the society by motivating and supporting
+                      ...shaping the society by motivating and supporting
                       academic dreams of students since 2000{" "}
                     </span>{" "}
-                    
                   </h3>
                   <p>
                     Engr. Anthony Udoekong, a young man in his 30s who spoke to
@@ -81,7 +81,7 @@ function Home() {
             </div>
           </div>
         </section>
-        <section id="stats" className="py-5" style={{display:"none"}}>
+        <section id="stats" className="py-5" style={{ display: "none" }}>
           <div className="container d-flex justify-content-between text-center">
             <div className="row">
               <div className="stats-value col-sm-4 py-3">
@@ -111,7 +111,7 @@ function Home() {
             </div>
           </div>
         </section>
-        <section id="testimonial-section">
+        <section id="testimonial-section" className="mt-5">
           <div className="container">
             <div className="row t-row">
               <div className="col-md-6 t-img-col">
@@ -137,13 +137,10 @@ function Home() {
                   </small>
 
                   <h3>
-                    I'm so grateful to Engr. John.
-                    <br />
-                    What you are giving is helping out a lot families like mine
-                    who wouldn't make it in this city.
-                    <small className="text-uppercase mt-2">
-                      Anonymous
-                    </small>
+                    I'm so grateful to Engr. Udoekong and the entire
+                    organisation for the financial support during my studies in
+                    the university.
+                    <small className="text-uppercase mt-2">Anonymous</small>
                   </h3>
                   {/* <a href="#">
               <small className="small-text text-uppercase font-weight-bold">read more &longrightarrow;</small>
@@ -188,13 +185,13 @@ function Home() {
                 </h1>
                 <h2 className="title">Donate</h2>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Accusamus, praesentium.
+                  Donations are important to our work as an organisation, hence
+                  we can support more students with your funds.
                 </p>
               </a>
             </div>
 
-            <div className="card my-2 mx-2">
+            {/* <div className="card my-2 mx-2">
               <a href="##">
                 <h1 className="icons">
                   <img src={baby} width="51" alt="" />
@@ -205,7 +202,7 @@ function Home() {
                   Accusamus, praesentium.
                 </p>
               </a>
-            </div>
+            </div> */}
 
             <div className="card my-2 mx-2">
               <a href="##">
@@ -213,14 +210,23 @@ function Home() {
                   <img src={share} alt="" />
                 </h1>
                 <h2 className="title">Share with Friends</h2>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Accusamus, praesentium.
-                </p>
+                <a
+                  href="https://www.facebook.com/James-Udoekong-Education-Trust-Fund-117624183436700/"
+                  id="fb-share-button"
+                  className="my-4"
+                >
+                  <svg viewBox="0 0 12 12" preserveAspectRatio="xMidYMid meet">
+                    <path
+                      className="svg-icon-path"
+                      d="M9.1,0.1V2H8C7.6,2,7.3,2.1,7.1,2.3C7,2.4,6.9,2.7,6.9,3v1.4H9L8.8,6.5H6.9V12H4.7V6.5H2.9V4.4h1.8V2.8 c0-0.9,0.3-1.6,0.7-2.1C6,0.2,6.6,0,7.5,0C8.2,0,8.7,0,9.1,0.1z"
+                    ></path>
+                  </svg>
+                  <span>Share</span>
+                </a>
               </a>
             </div>
 
-            <div className="card my-2 mx-2">
+            {/* <div className="card my-2 mx-2">
               <a href="##">
                 <h1 className="icons">
                   <img src={love} alt="" />
@@ -231,7 +237,7 @@ function Home() {
                   Accusamus, praesentium.
                 </p>
               </a>
-            </div>
+            </div> */}
           </div>
         </section>
         <section id="p-foot" className="mt-5 text-center">
